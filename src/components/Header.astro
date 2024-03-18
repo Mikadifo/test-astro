@@ -1,0 +1,24 @@
+---
+import HeaderButton from "../components/HeaderButton.astro";
+---
+
+<header class="py-8 px-4 mx-auto max-w-xl lg:py-16 lg:px-16">
+  <div class="mx-auto text-center mb-8 lg:mb-16">
+    <h2 class="mb-4 text-5xl tracking-tight font-extrabold">Astro Test</h2>
+    <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
+      This is astro testing in vim.
+    </p>
+  </div>
+  <nav
+    class="flex flex-col items-center justify-between w-full text-center md:flex-row"
+  >
+    <HeaderButton href="/"> Home </HeaderButton>
+    <HeaderButton href="/other">
+      <!--slot="after" is for slot positioning-->
+      <span slot="after">*</span>
+      Other</HeaderButton
+    >
+    <HeaderButton href="/about"> About </HeaderButton>
+    <HeaderButton />
+  </nav>
+</header>
