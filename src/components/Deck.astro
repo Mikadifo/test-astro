@@ -32,11 +32,10 @@ const backCard = "https://deckofcardsapi.com/static/img/back.png";
 
       let isNewCardVisible = false;
       const drawButton = this.querySelector("#draw");
-      const text = this.querySelector("#text");
       const newCard = this.querySelector("#newCard");
       const deckId = this.getAttribute("id");
 
-      draw.addEventListener("click", async () => {
+      drawButton.addEventListener("click", async () => {
         let cardImg = "";
         if (!isNewCardVisible) {
           const res = await fetch(
