@@ -12,13 +12,13 @@ import HeaderButton from "../components/HeaderButton.astro";
   <nav
     class="flex flex-col items-center justify-between w-full text-center md:flex-row"
   >
-    <HeaderButton href="/"> Home </HeaderButton>
-    <HeaderButton href="/other">
+    <HeaderButton url="/"> Home </HeaderButton>
+    <HeaderButton url="/other">
       <!--slot="after" is for slot positioning-->
       <span slot="after">*</span>
       Other</HeaderButton
     >
-    <HeaderButton href="/about"> About </HeaderButton>
+    <HeaderButton url="/about"> About </HeaderButton>
     <HeaderButton />
   </nav>
 </header>
